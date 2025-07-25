@@ -3,6 +3,7 @@ import componentImg from "./assets/components.png";
 import { CORE_CONCEPTS } from "./data";
 import CoreConcepts from "./coreConcept";
 import Header from "./Header";
+import TabButton from "./tabButton";
 
 function App() {
   return (
@@ -20,14 +21,17 @@ function App() {
              <CoreConcepts {...CORE_CONCEPTS[3]}/>
         </ul>
       </section>
-      <section id="example">
+      <section id="examples">
         <h2>Examples</h2>
         <menu>
-
+<TabButton>Components</TabButton>
+<TabButton>JSX</TabButton>
+<TabButton>Props</TabButton>
+<TabButton>State</TabButton>
         </menu>
       </section>
     </div>
-  );
+  )
 }
 
 export default App;
